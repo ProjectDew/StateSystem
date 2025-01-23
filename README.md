@@ -1,6 +1,6 @@
 # StateSystem
 
-My version of a finite state machine.
+My version of a finite state machine for Unity.
 
 *(Note: all the classes in this repository that would inherit from MonoBehaviour inherit from [ManagedBehaviour](https://gist.github.com/ProjectDew/affdadd490060f680e135be9e5fa32bc) instead, an abstract class that I use to better manage what should be executing and when).*
 
