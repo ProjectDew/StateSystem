@@ -37,7 +37,7 @@ A finite state machine that I designed for personal use.
 
   - ***Empty***: returns an empty StateBehaviourArgs.
 
-***StateEventHandler***: an optional class that requires a StateMachine component. It's used to subscribe to, or unsubscribe from, the events of that machine without exposing its other methods and properties to the listener.
+- ***StateEventHandler***: an optional class that requires a StateMachine component. It's used to subscribe to, or unsubscribe from, the events of that machine without exposing its other methods and properties to the listener.
 
   - ***Initialize***: prepares the class to work.
   - ***SubscribeToSetState (2 overloads)***: subscribes to an event that is fired when the specified state is set.
