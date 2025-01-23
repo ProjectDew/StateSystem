@@ -1,18 +1,18 @@
 # StateSystem
 
-A finite state machine that I designed for personal use.
+My version of a finite state machine.
 
-*(Note: all the classes in this repository that would inherit from MonoBehaviour inherit from [ManagedBehaviour](https://gist.github.com/ProjectDew/affdadd490060f680e135be9e5fa32bc) instead, a class that I use to manage what should be executing and when).*
+*(Note: all the classes in this repository that would inherit from MonoBehaviour inherit from [ManagedBehaviour](https://gist.github.com/ProjectDew/affdadd490060f680e135be9e5fa32bc) instead, an abstract class that I use to better manage what should be executing and when).*
 
 - ***State***: a ScriptableObject that, along with the StateMachine component, is the core of the system.
 
   - ***ID***: returns a string that serves to identify the state.
 
-- ***StateMachine***: the core class of the system. It's a component which contains an array of states that can be added through the inspector, as well as events that are raised whenever a state is set or cleared.
+- ***StateMachine***: the core class of the system. It's a component containing an array of states that can be added through the inspector.
 
   - ***PreviousState***: returns the previous state of the object.
   - ***CurrentState***: returns the current state of the object.
-  - ***Initialize (2 overloads)***: if the object has an event handler or any of the states has some behaviours, this method initializes them.
+  - ***Initialize (2 overloads)***: if the object has an event handler or one or more state behaviours, this makes them ready to work.
   - ***SubscribeToSetState (2 overloads)***: subscribes to an event that is fired when the specified state is set.
   - ***SubscribeToClearState (2 overloads)***: subscribes to an event that is fired when the specified state is cleared.
   - ***UnsubscribeFromSetState (2 overloads)***: unsubscribes from an event that is fired when the specified state is set.
